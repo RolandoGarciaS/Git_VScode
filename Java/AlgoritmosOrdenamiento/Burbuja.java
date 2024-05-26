@@ -10,7 +10,8 @@ public class Burbuja {
         }else{
             boolean ordenado = true;
             do {
-                for (int i = 0; i < numeros.size() - 2; i++) {
+                ordenado = true;
+                for (int i = 0; i < numeros.size() - 1; i++) {
                     if(numeros.get(i) > numeros.get(i + 1)){
                         int aux = numeros.get(i + 1);
                         numeros.set(i + 1, numeros.get(i));
